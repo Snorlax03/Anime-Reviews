@@ -1,0 +1,31 @@
+# --- School / private documents (kept locally, not published) ---
+*.pdf
+*.docx
+PROJECT_HANDOVER.md
+
+# --- Data (too large for GitHub; regenerate with 01_Data_Scraping.ipynb) ---
+data/*.csv
+data/cache/
+data/transformer_cache/
+
+# Small artifacts that ARE committed so the trained model can be reused:
+#   data/final_sentiment_model.joblib
+#   data/clean_artifacts.json
+
+# --- Python / Jupyter ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.env
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*

@@ -1,0 +1,22 @@
+# Core pipeline
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+wordcloud>=1.9
+nltk>=3.9
+joblib>=1.3
+
+# The saved model (data/final_sentiment_model.joblib) was trained with scikit-learn 1.9.0.
+# Pinned exactly: other versions print warnings when loading it, or may fail to load it.
+scikit-learn==1.9.0
+
+# Notebooks
+jupyter
+ipykernel
+
+# Transformer benchmark only (notebook 3, Sections 8-9b). Large download, ~2 GB.
+transformers>=4.40
+torch>=2.2
