@@ -12,6 +12,10 @@ data/transformer_cache/
 #   data/final_sentiment_model.joblib
 #   data/clean_artifacts.json
 
+# --- Fine-tuned transformers (notebook 4): 250-500 MB each, over GitHub's 100 MB limit.
+# Share them through the Hugging Face Hub instead (notebook 4, Step 12b).
+models/
+
 # --- Python / Jupyter ---
 __pycache__/
 *.py[cod]

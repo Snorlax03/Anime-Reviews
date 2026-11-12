@@ -16,7 +16,17 @@ scikit-learn==1.9.0
 # Notebooks
 jupyter
 ipykernel
+ipywidgets          # progress bars during fine-tuning
 
-# Transformer benchmark only (notebook 3, Sections 8-9b). Large download, ~2 GB.
+# Transformers: zero-shot benchmarks (notebook 3), fine-tuning (notebook 4) and
+# `predict.py --model distilbert/roberta`. Large download, ~2-3 GB.
+#
+# For an NVIDIA GPU, install the CUDA build of PyTorch BEFORE this file, otherwise pip
+# installs a CPU-only build:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+# Notebook 4 was developed with torch 2.11 (CUDA 12.8) and transformers 5.22.
 transformers>=4.40
-torch>=2.2
+torch>=2.3
+huggingface_hub>=0.23
+safetensors
+tqdm
